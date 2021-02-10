@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A-Frame simple example.">
+    <meta name="keywords" content="Virtual Reality, A-Frame">
+    <meta name="author" content="Olivier Nocent">
+    <title>Get started with A-Frame</title>
+    <!-- A-Frame JavaScript library -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="buisson" src="buisson.jpg">
+        <img id="terre" src="terre.jpg">
+      </a-assets>
+	  <! -- mur exterieur -->
+      <a-box position="3 0.5 -4" rotation="0 0 0" depth="4.1" width="0.1" height="1" src="#buisson" ></a-box>
+      <a-box position="-3 0.5 -4" rotation="0 0 0" depth="4.1" width="0.1" height="1" src="#buisson" ></a-box>
+      <a-box position="0 0.5 -6" rotation="0 90 0" depth="6.1" width="0.1" height="1" src="#buisson"></a-box>
+      <a-box position="0 0.5 -2" rotation="0 90 0" depth="6.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  
+	  <! -- mur interieur -->
+	  <a-box position="0 0.5 -5.5" rotation="0 0 0" depth="1.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="0 0.5 -5" rotation="0 90 0" depth="4.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="2 0.5 -4" rotation="0 0 0" depth="2.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="1.5 0.5 -3" rotation="0 90 0" depth="1.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="1 0.5 -3.5" rotation="0 0 0" depth="1.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="-1 0.5 -4" rotation="0 90 0" depth="2.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="0 0.5 -3" rotation="0 0 0" depth="2.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="-1 0.5 -3.5" rotation="0 0 0" depth="1.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  <a-box position="-2.5 0.5 -3" rotation="0 90 0" depth="1.1" width="0.1" height="1" src="#buisson" ></a-box>
+	  
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="6" height="4" src="#terre"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera></a-camera>
+    </a-scene>
+  </body>
+  </html>
+  
